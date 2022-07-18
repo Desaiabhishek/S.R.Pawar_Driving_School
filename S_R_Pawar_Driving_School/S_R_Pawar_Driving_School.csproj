@@ -1,0 +1,429 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{D678E0E8-2BF9-47A6-A0AB-D98D31EF7A16}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>S_R_Pawar_Driving_School</RootNamespace>
+    <AssemblyName>S_R_Pawar_Driving_School</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <TargetFrameworkProfile>
+    </TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="CrystalDecisions.CrystalReports.Engine, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.ReportSource, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="CrystalDecisions.Shared, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="CrystalDecisions.Windows.Forms, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="FlashControlV71, Version=1.0.3187.32366, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.DirectoryServices" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Services, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Windows\Microsoft.Net\assembly\GAC_MSIL\System.Web.Services\v4.0_4.0.0.0__b03f5f7f11d50a3a\System.Web.Services.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="frm_Add_login_User.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_Add_login_User.Designer.cs">
+      <DependentUpon>frm_Add_login_User.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_All_Students_Fee.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_All_Students_Fee.Designer.cs">
+      <DependentUpon>frm_All_Students_Fee.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_All_Student.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_All_Student.Designer.cs">
+      <DependentUpon>frm_All_Student.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_All_Trainer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_All_Trainer.Designer.cs">
+      <DependentUpon>frm_All_Trainer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_All_Vehicals_Details.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_All_Vehicals_Details.Designer.cs">
+      <DependentUpon>frm_All_Vehicals_Details.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_All_Vehical_Maintanance_Details.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_All_Vehical_Maintanance_Details.Designer.cs">
+      <DependentUpon>frm_All_Vehical_Maintanance_Details.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_Fees.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_Fees.Designer.cs">
+      <DependentUpon>frm_Fees.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_Licence_Appointment.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_Licence_Appointment.Designer.cs">
+      <DependentUpon>frm_Licence_Appointment.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_Licence_Candidate.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_Licence_Candidate.Designer.cs">
+      <DependentUpon>frm_Licence_Candidate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_Course_Structure.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_Course_Structure.Designer.cs">
+      <DependentUpon>frm_Course_Structure.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_License_Fee.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_License_Fee.Designer.cs">
+      <DependentUpon>frm_License_Fee.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_Login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_Login.Designer.cs">
+      <DependentUpon>frm_Login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_login_page.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_login_page.Designer.cs">
+      <DependentUpon>frm_login_page.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_Main.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_Main.Designer.cs">
+      <DependentUpon>frm_Main.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_Single_Fee_Details.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_Single_Fee_Details.Designer.cs">
+      <DependentUpon>frm_Single_Fee_Details.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_Splash_Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_Splash_Form.Designer.cs">
+      <DependentUpon>frm_Splash_Form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_Student_Registration.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_Student_Registration.Designer.cs">
+      <DependentUpon>frm_Student_Registration.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_Trainer_Registration.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_Trainer_Registration.Designer.cs">
+      <DependentUpon>frm_Trainer_Registration.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_Update_Course_ Structure.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_Update_Course_ Structure.Designer.cs">
+      <DependentUpon>frm_Update_Course_ Structure.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_Update_Student.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_Update_Student.Designer.cs">
+      <DependentUpon>frm_Update_Student.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_Update_Trainer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_Update_Trainer.Designer.cs">
+      <DependentUpon>frm_Update_Trainer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_Update_Vehical.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_Update_Vehical.Designer.cs">
+      <DependentUpon>frm_Update_Vehical.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_Vehical_Maintanance.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_Vehical_Maintanance.Designer.cs">
+      <DependentUpon>frm_Vehical_Maintanance.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_Vehical_Details.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_Vehical_Details.Designer.cs">
+      <DependentUpon>frm_Vehical_Details.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Reports_From\frm_rep_All_Student_Fee.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reports_From\frm_rep_All_Student_Fee.Designer.cs">
+      <DependentUpon>frm_rep_All_Student_Fee.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reports_From\frm_rep_All_Trainer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reports_From\frm_rep_All_Trainer.Designer.cs">
+      <DependentUpon>frm_rep_All_Trainer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reports_From\frm_rep_All_Vehical_Maintanance.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reports_From\frm_rep_All_Vehical_Maintanance.Designer.cs">
+      <DependentUpon>frm_rep_All_Vehical_Maintanance.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reports_From\frm_rep_Single_Student_Details.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reports_From\frm_rep_Single_Student_Details.Designer.cs">
+      <DependentUpon>frm_rep_Single_Student_Details.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Report\cryrep_All_Student_Fee.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>cryrep_All_Student_Fee.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Report\cryrep_All_trainer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>cryrep_All_trainer.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Report\cryrep_All_Vehical_Maintanance.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>cryrep_All_Vehical_Maintanance.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Report\cryrep_Single_Student_Fee.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>cryrep_Single_Student_Fee.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <EmbeddedResource Include="frm_Add_login_User.resx">
+      <DependentUpon>frm_Add_login_User.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_All_Students_Fee.resx">
+      <DependentUpon>frm_All_Students_Fee.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_All_Student.resx">
+      <DependentUpon>frm_All_Student.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_All_Trainer.resx">
+      <DependentUpon>frm_All_Trainer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_All_Vehicals_Details.resx">
+      <DependentUpon>frm_All_Vehicals_Details.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_All_Vehical_Maintanance_Details.resx">
+      <DependentUpon>frm_All_Vehical_Maintanance_Details.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_Fees.resx">
+      <DependentUpon>frm_Fees.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_Licence_Appointment.resx">
+      <DependentUpon>frm_Licence_Appointment.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_Licence_Candidate.resx">
+      <DependentUpon>frm_Licence_Candidate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_Course_Structure.resx">
+      <DependentUpon>frm_Course_Structure.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_License_Fee.resx">
+      <DependentUpon>frm_License_Fee.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_Login.resx">
+      <DependentUpon>frm_Login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_login_page.resx">
+      <DependentUpon>frm_login_page.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_Main.resx">
+      <DependentUpon>frm_Main.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_Single_Fee_Details.resx">
+      <DependentUpon>frm_Single_Fee_Details.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_Splash_Form.resx">
+      <DependentUpon>frm_Splash_Form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_Student_Registration.resx">
+      <DependentUpon>frm_Student_Registration.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_Trainer_Registration.resx">
+      <DependentUpon>frm_Trainer_Registration.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_Update_Course_ Structure.resx">
+      <DependentUpon>frm_Update_Course_ Structure.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_Update_Student.resx">
+      <DependentUpon>frm_Update_Student.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_Update_Trainer.resx">
+      <DependentUpon>frm_Update_Trainer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_Update_Vehical.resx">
+      <DependentUpon>frm_Update_Vehical.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_Vehical_Maintanance.resx">
+      <DependentUpon>frm_Vehical_Maintanance.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_Vehical_Details.resx">
+      <DependentUpon>frm_Vehical_Details.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="Reports_From\frm_rep_All_Student_Fee.resx">
+      <DependentUpon>frm_rep_All_Student_Fee.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports_From\frm_rep_All_Trainer.resx">
+      <DependentUpon>frm_rep_All_Trainer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports_From\frm_rep_All_Vehical_Maintanance.resx">
+      <DependentUpon>frm_rep_All_Vehical_Maintanance.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports_From\frm_rep_Single_Student_Details.resx">
+      <DependentUpon>frm_rep_Single_Student_Details.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report\cryrep_All_Student_Fee.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>cryrep_All_Student_Fee.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report\cryrep_All_trainer.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>cryrep_All_trainer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report\cryrep_All_Vehical_Maintanance.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>cryrep_All_Vehical_Maintanance.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report\cryrep_Single_Student_Fee.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>cryrep_Single_Student_Fee.cs</LastGenOutput>
+    </EmbeddedResource>
+    <None Include="app.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\kindpng_7664946.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\kindpng_4371299.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\kindpng_7366355.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\search-icon-transparent-19.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Screenshot_2021-12-14-18-17-26-02.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\PicsArt_01-01-03.15.19.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1641029842989.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\PicsArt_01-03-08.18.34.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\PicsArt_01-03-08.18.34_LI %282%29.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\PngItem_2854727.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Licence_Candidate_Document\" />
+    <Folder Include="Student_Document\" />
+    <Folder Include="Trainer_Document\" />
+    <Folder Include="Vehical_Maintanance_Bill_Upload\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{C0C07587-41A7-46C8-8FBD-3F9C8EBE2DDC}" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Screenshot_2021-12-14-18-17-26-021.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BMW.jpg" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
